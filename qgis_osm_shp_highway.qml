@@ -30,80 +30,80 @@
     <rules key="{8c24802f-36cb-4405-b071-0a5b0901509a}">
       <rule filter="type  =  'motorway'" key="{2816d913-41c0-448e-9ccd-21c02e79bb6f}" label="Motorway">
         <rule scalemaxdenom="5000" key="{592b07da-2eee-4857-bd29-ab61fabc4ade}" symbol="0" scalemindenom="1" label="0 - 5000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{332ca98a-1742-42a5-86b8-b0f8430e1fc2}" symbol="1" scalemindenom="1" label="motorway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{332ee02a-57cf-4092-985b-b79eed6db6c7}" symbol="2" scalemindenom="1" label="motorway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{332ca98a-1742-42a5-86b8-b0f8430e1fc2}" symbol="1" label="motorway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{332ee02a-57cf-4092-985b-b79eed6db6c7}" symbol="2" label="motorway tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{dc81e24b-3cd8-4c82-9912-681cb2fd7a70}" symbol="3" scalemindenom="5000" label="5000 - 10000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{3fab5f7d-c522-4ff0-b0bd-59dd809bcbdc}" symbol="4" scalemindenom="1" label="motorway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{2e74c64d-a6bd-4cd4-a1f8-f3ae9b299eae}" symbol="5" scalemindenom="1" label="motorway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{3fab5f7d-c522-4ff0-b0bd-59dd809bcbdc}" symbol="4" label="motorway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{2e74c64d-a6bd-4cd4-a1f8-f3ae9b299eae}" symbol="5" label="motorway tunnel"/>
         </rule>
         <rule scalemaxdenom="20000" key="{dc188b53-5217-4d53-8a7f-e9c69534673c}" symbol="6" scalemindenom="10000" label="10000 - 20000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{e36fa019-8b76-48d9-9bfa-d9902eb93ffe}" symbol="7" scalemindenom="1" label="motorway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{ba193923-6106-4b87-b2d4-b726e9dcac51}" symbol="8" scalemindenom="1" label="motorway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{e36fa019-8b76-48d9-9bfa-d9902eb93ffe}" symbol="7" label="motorway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{ba193923-6106-4b87-b2d4-b726e9dcac51}" symbol="8" label="motorway tunnel"/>
         </rule>
         <rule scalemaxdenom="50000" key="{0c3ec40d-9912-4ff3-a2d3-08e46eeacd86}" symbol="9" scalemindenom="20000" label="20000 - 50000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{df31917a-542a-454f-9732-587d06d2cabb}" symbol="10" scalemindenom="1" label="motorway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{7f782029-9715-45d8-bf14-ab3537d14367}" symbol="11" scalemindenom="1" label="motorway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{df31917a-542a-454f-9732-587d06d2cabb}" symbol="10" label="motorway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{7f782029-9715-45d8-bf14-ab3537d14367}" symbol="11" label="motorway tunnel"/>
         </rule>
         <rule scalemaxdenom="250000" key="{38349616-d6c2-4ffe-aa2a-5e3909570c03}" symbol="12" scalemindenom="50000" label="50000 - 250000"/>
         <rule scalemaxdenom="10000000" key="{9d058c8f-729d-47ca-9ef3-fc765c4b0f21}" symbol="13" scalemindenom="100000" label="250000 - 10000000"/>
       </rule>
       <rule filter="type  =  'trunk'" key="{aa37c93a-f72d-4683-ae27-b696e80e04e3}" label="Freeway">
         <rule scalemaxdenom="5000" key="{0a51cfae-4f4a-44ad-b297-36fe4057be72}" symbol="14" scalemindenom="1" label="0 - 5000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{eeada7e3-561c-4999-8d8a-885eb8aeb299}" symbol="15" scalemindenom="1" label="freeway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{2fb72994-990e-443e-887a-c5c4c20bd026}" symbol="16" scalemindenom="1" label="freeway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{eeada7e3-561c-4999-8d8a-885eb8aeb299}" symbol="15" label="freeway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{2fb72994-990e-443e-887a-c5c4c20bd026}" symbol="16" label="freeway tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{dc3fb192-40c9-4d21-a55b-bd03ae30aec3}" symbol="17" scalemindenom="5000" label="5000 - 10000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{182bcf96-ed1f-4c0f-ba13-6dbcd0df3565}" symbol="18" scalemindenom="1" label="freeway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{0e204021-51a7-42d1-9692-d4e8527d51c3}" symbol="19" scalemindenom="1" label="freeway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{182bcf96-ed1f-4c0f-ba13-6dbcd0df3565}" symbol="18" label="freeway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{0e204021-51a7-42d1-9692-d4e8527d51c3}" symbol="19" label="freeway tunnel"/>
         </rule>
         <rule scalemaxdenom="20000" key="{efdbfee2-a9f5-4079-b960-2677df8c7217}" symbol="20" scalemindenom="10000" label="10000 - 20000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{8c64f74e-bd58-4935-a26e-876e7ca9fb17}" symbol="21" scalemindenom="1" label="freeway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{b40f1cea-156a-4f3c-95c6-4ffd8581317f}" symbol="22" scalemindenom="1" label="freeway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{8c64f74e-bd58-4935-a26e-876e7ca9fb17}" symbol="21" label="freeway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{b40f1cea-156a-4f3c-95c6-4ffd8581317f}" symbol="22" label="freeway tunnel"/>
         </rule>
         <rule scalemaxdenom="50000" key="{355872e8-9b70-492d-a108-078eaa596ce6}" symbol="23" scalemindenom="20000" label="20000 - 50000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{70ab9dc8-8c7c-4d87-8e46-8a4485db015b}" symbol="24" scalemindenom="1" label="freeway bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{49198ab3-2f2e-48ac-82e3-f888d4a52adf}" symbol="25" scalemindenom="1" label="freeway tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{70ab9dc8-8c7c-4d87-8e46-8a4485db015b}" symbol="24" label="freeway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{49198ab3-2f2e-48ac-82e3-f888d4a52adf}" symbol="25" label="freeway tunnel"/>
         </rule>
         <rule scalemaxdenom="250000" key="{b74d6601-65be-47ad-9e64-8a21de895855}" symbol="26" scalemindenom="50000" label="50000 - 250000"/>
         <rule scalemaxdenom="10000000" key="{a7ed9b62-13eb-4a35-a458-99170f3bb83c}" symbol="27" scalemindenom="100000" label="250000 - 10000000"/>
       </rule>
       <rule filter="type  IN ( 'motorway_link' , 'trunk_link')" key="{8c39fa44-b06d-4e08-90ea-c7ae81ad0315}" label="Motorway link">
         <rule scalemaxdenom="5000" key="{5dcc4e80-909d-493e-9842-3ae25727f46a}" symbol="28" scalemindenom="1" label="0 - 5000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{206b7d44-a609-4e87-990f-c0d8098fe962}" symbol="29" scalemindenom="1" label="motorway link bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{a7f2e071-75e4-4036-b52c-98561a7df686}" symbol="30" scalemindenom="1" label="motorway link tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{206b7d44-a609-4e87-990f-c0d8098fe962}" symbol="29" label="motorway link bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{a7f2e071-75e4-4036-b52c-98561a7df686}" symbol="30" label="motorway link tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{d1866471-b974-496c-9833-3c50d7d3eeb0}" symbol="31" scalemindenom="5000" label="5000 - 10000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{0b545ce0-a6de-441d-9583-14ceadce0e7f}" symbol="32" scalemindenom="1" label="motorway link bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{08ae4e82-e4bd-4639-86ca-f8b886c0ee46}" symbol="33" scalemindenom="1" label="motorway link tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{0b545ce0-a6de-441d-9583-14ceadce0e7f}" symbol="32" label="motorway link bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{08ae4e82-e4bd-4639-86ca-f8b886c0ee46}" symbol="33" label="motorway link tunnel"/>
         </rule>
         <rule scalemaxdenom="20000" key="{81e4d1ca-dbe5-43c7-a5c5-b9d26f0b0345}" symbol="34" scalemindenom="10000" label="10000 - 20000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{8a4d42d0-3ce1-444c-9276-e2f5cb121554}" symbol="35" scalemindenom="1" label="motorway link bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{31ada0ee-cbbe-435f-8f06-78452630a7ee}" symbol="36" scalemindenom="1" label="motorway link tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{8a4d42d0-3ce1-444c-9276-e2f5cb121554}" symbol="35" label="motorway link bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{31ada0ee-cbbe-435f-8f06-78452630a7ee}" symbol="36" label="motorway link tunnel"/>
         </rule>
         <rule scalemaxdenom="50000" key="{c26f7280-6fa2-4986-ada0-a5e15b48fd82}" symbol="37" scalemindenom="20000" label="20000 - 50000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{1d02413f-faa2-4285-a17f-68733d733868}" symbol="38" scalemindenom="1" label="motorway link bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{0d3f7ef1-bc9d-4ae0-b3bc-594ed77261e5}" symbol="39" scalemindenom="1" label="motorway link tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{1d02413f-faa2-4285-a17f-68733d733868}" symbol="38" label="motorway link bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{0d3f7ef1-bc9d-4ae0-b3bc-594ed77261e5}" symbol="39" label="motorway link tunnel"/>
         </rule>
         <rule scalemaxdenom="250000" key="{7ad86ecf-833a-4a88-ac52-b9e885f2b7db}" symbol="40" scalemindenom="50000" label="50000 - 250000"/>
         <rule scalemaxdenom="500000" key="{4f102e6a-a9d5-43f2-ab89-1f5731be1b23}" symbol="41" scalemindenom="250000" label="250000 - 500000"/>
       </rule>
       <rule filter="type  IN ( 'primary' , 'primary_link')" key="{ed3fa688-4989-4f08-bc38-b8e98f791092}" label="Primary">
         <rule scalemaxdenom="5000" key="{7c66d81b-7bec-409c-89df-1f99a800a0e4}" symbol="42" scalemindenom="1" label="0 - 5000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{9e0482ee-edc6-45ed-a623-76e495c3415d}" symbol="43" scalemindenom="1" label="primary bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{1aed2a34-4d5c-4f1d-bcc0-09b09328646e}" symbol="44" scalemindenom="1" label="primary tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{9e0482ee-edc6-45ed-a623-76e495c3415d}" symbol="43" label="primary bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{1aed2a34-4d5c-4f1d-bcc0-09b09328646e}" symbol="44" label="primary tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{bbada759-0d17-4143-a32c-90927e1fd5d4}" symbol="45" scalemindenom="5000" label="5000 - 10000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{68fcf719-68d3-4555-88ef-4b0e56b1b90e}" symbol="46" scalemindenom="1" label="primary bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{e0c8a8af-66fd-49f7-aae7-0a9dfe49a3d9}" symbol="47" scalemindenom="1" label="primary tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{68fcf719-68d3-4555-88ef-4b0e56b1b90e}" symbol="46" label="primary bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{e0c8a8af-66fd-49f7-aae7-0a9dfe49a3d9}" symbol="47" label="primary tunnel"/>
         </rule>
         <rule scalemaxdenom="20000" key="{fbfbba3e-4e0d-468f-b998-6c59e590e83a}" symbol="48" scalemindenom="10000" label="10000 - 20000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{439ae81e-9687-422c-993e-c26b8d8733de}" symbol="49" scalemindenom="1" label="primary bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{23ecfe34-edd1-422c-a32c-ae593121b8df}" symbol="50" scalemindenom="1" label="primary tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{439ae81e-9687-422c-993e-c26b8d8733de}" symbol="49" label="primary bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{23ecfe34-edd1-422c-a32c-ae593121b8df}" symbol="50" label="primary tunnel"/>
         </rule>
         <rule scalemaxdenom="50000" key="{1113b4ae-a265-4f8c-abc9-d5d949e3db29}" symbol="51" scalemindenom="20000" label="20000 - 50000">
-          <rule scalemaxdenom="50000" filter="&quot;bridge&quot; = '1'" key="{4e445a57-83ec-4398-a5be-bee2c20e2502}" symbol="52" scalemindenom="1" label="primary bridge"/>
-          <rule scalemaxdenom="50000" filter="&quot;tunnel&quot; = '1'" key="{5fcaa69b-3890-426b-abed-5b0ec9b4571b}" symbol="53" scalemindenom="1" label="primary tunnel"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{4e445a57-83ec-4398-a5be-bee2c20e2502}" symbol="52" label="primary bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{5fcaa69b-3890-426b-abed-5b0ec9b4571b}" symbol="53" label="primary tunnel"/>
         </rule>
         <rule scalemaxdenom="250000" key="{a573008e-6f54-48c1-ae5b-7565b374a680}" symbol="54" scalemindenom="50000" label="50000 - 250000"/>
         <rule scalemaxdenom="500000" key="{de1c571f-8e05-4838-a9e9-efaa270ad281}" symbol="55" scalemindenom="250000" label="250000 - 500000"/>
@@ -551,19 +551,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -782,19 +782,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="2.7"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -924,19 +924,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="2.3"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -960,19 +960,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="2.7"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1102,19 +1102,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.9"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1244,19 +1244,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1395,7 +1395,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="3"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1412,7 +1412,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1484,7 +1484,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="3"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1494,19 +1494,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1556,7 +1556,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="2.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1573,7 +1573,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1592,7 +1592,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="2.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1602,19 +1602,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1664,7 +1664,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1681,7 +1681,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1700,7 +1700,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1710,19 +1710,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1772,7 +1772,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1808,7 +1808,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1818,19 +1818,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="0.8"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1971,7 +1971,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="3"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1988,7 +1988,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2007,7 +2007,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="3"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2017,19 +2017,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -2079,7 +2079,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="2.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2096,7 +2096,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2115,7 +2115,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="2.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2125,19 +2125,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -2187,7 +2187,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2204,7 +2204,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2233,19 +2233,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.9"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -2259,7 +2259,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2269,19 +2269,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -2331,7 +2331,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="2.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2348,7 +2348,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="207,23,48,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2367,7 +2367,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="2.06"/>
+          <prop k="line_width" v="2.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2377,19 +2377,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.86"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -2513,7 +2513,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="3.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2530,7 +2530,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="234,155,166,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2549,7 +2549,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="3.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2566,7 +2566,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="2.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2674,7 +2674,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2.4"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2691,7 +2691,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="234,155,166,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="1.4"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2710,7 +2710,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2.4"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2727,7 +2727,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="1.4"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2782,7 +2782,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2799,7 +2799,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="234,155,166,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2818,7 +2818,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2835,7 +2835,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,127"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.6"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2890,7 +2890,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -2926,7 +2926,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="128,128,128,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="1.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -3370,19 +3370,19 @@
         </layer>
         <layer pass="9" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,127"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
