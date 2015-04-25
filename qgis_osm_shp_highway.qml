@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="2.8.1-Wien" minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+<qgis version="2.8.1-Wien" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="3" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="2" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
   <edittypes>
     <edittype widgetv2type="TextEdit" name="osm_id">
       <widgetv2config IsMultiline="0" fieldEditable="1" UseHtml="0" labelOnTop="0"/>
@@ -174,62 +174,104 @@
         <rule scalemaxdenom="250000" key="{9b5cf15f-8804-4474-b250-44df628f7050}" symbol="84" scalemindenom="50000" label="50000 - 250000"/>
         <rule scalemaxdenom="500000" key="{071123e0-ce11-42bb-b453-e58880f2d3c5}" symbol="85" scalemindenom="250000" label="250000 - 500000"/>
       </rule>
-      <rule filter="type  IN ( 'residential' , 'road' , 'unclassified' )" key="{527f9a4b-88d1-4889-977e-2f16b4ac6d29}" label="Minor">
+      <rule filter="type  IN ( 'residential' , 'road' , 'unclassified' )" key="{66c597ed-4a81-443e-9e08-7be188b617e2}" label="Minor">
+        <rule scalemaxdenom="5000" key="{a5cf4406-4d99-422e-980a-6a4e4fec5626}" scalemindenom="1" label="1 - 5000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{e1bf94f8-1c08-487c-93d4-b9484713b912}" symbol="86" label="minor"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{4c9f6af2-064b-48e8-a43f-6a622c1074fc}" symbol="87" label="minor bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{fe69f5fd-f81b-4724-8753-c4cc20c4f771}" symbol="88" label="minor tunnel"/>
+        </rule>
+        <rule scalemaxdenom="10000" key="{77a235aa-b9e2-40d7-abac-7f2ffa514a41}" scalemindenom="5000" label="5000 - 10000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{29499603-6b8d-41f1-bd71-9acb0b3652de}" symbol="89" label="minor"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{37aebefc-2103-49c6-9e7c-086b196b1fdc}" symbol="90" label="minor bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{e24b8a39-cb2a-4444-94e4-a459eb7e17f1}" symbol="91" label="minor tunnel"/>
+        </rule>
+        <rule scalemaxdenom="20000" key="{8f62939c-9426-49df-8afd-64f9a115d929}" scalemindenom="10000" label="10000 - 20000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{f3d1e412-d581-4b9a-8c49-80bb7afc70fe}" symbol="92" label="minor"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{f99a0515-4ef1-493a-841a-e5aadbc8c723}" symbol="93" label="minor bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{b017a6ce-148b-4859-90c2-ff17778ab280}" symbol="94" label="minor tunnel"/>
+        </rule>
+        <rule scalemaxdenom="50000" key="{f458e80b-d877-4e4a-9413-69d8599df186}" scalemindenom="20000" label="20000 - 50000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{8b4d1c14-bc1e-4563-8cfa-8117b82da734}" symbol="95" label="minor"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{ace2a08a-f0c7-468f-9c20-7596c7bbfa69}" symbol="96" label="minor bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{19206191-c855-4bbe-a71a-489888e95623}" symbol="97" label="minor tunnel"/>
+        </rule>
+        <rule scalemaxdenom="250000" key="{74b01de2-e18b-4226-afb4-43d0ae288988}" symbol="98" scalemindenom="50000" label="50000 - 250000"/>
+      </rule>
+      <rule filter="type IN ('service','living_street')" key="{527f9a4b-88d1-4889-977e-2f16b4ac6d29}" label="Service">
         <rule scalemaxdenom="5000" key="{4ebc2610-b379-47c5-ab4d-347aaecaa860}" scalemindenom="1" label="1 - 5000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{77be7163-d789-454d-88dd-109d49831ca4}" symbol="86" label="minor"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{dc20c4c1-136d-4fce-9864-e214cc53f4ce}" symbol="87" label="minor bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{1981eafd-3144-4337-b14b-3500f6ba1d92}" symbol="88" label="minor tunnel"/>
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{77be7163-d789-454d-88dd-109d49831ca4}" symbol="99" label="service"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{dc20c4c1-136d-4fce-9864-e214cc53f4ce}" symbol="100" label="service bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{1981eafd-3144-4337-b14b-3500f6ba1d92}" symbol="101" label="service tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{f0ff9f2e-961e-4677-97ff-fdd531410453}" scalemindenom="5000" label="5000 - 10000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{ab9d0a0a-2a2c-4177-b981-78233d32def7}" symbol="89" label="minor"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{521e3983-32c6-42ad-a024-c01fa12f0501}" symbol="90" label="minor bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{47d43a45-15f3-4333-bbbd-66ac837e9e26}" symbol="91" label="minor tunnel"/>
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{ab9d0a0a-2a2c-4177-b981-78233d32def7}" symbol="102" label="service"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{521e3983-32c6-42ad-a024-c01fa12f0501}" symbol="103" label="service bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{47d43a45-15f3-4333-bbbd-66ac837e9e26}" symbol="104" label="service tunnel"/>
         </rule>
-        <rule scalemaxdenom="20000" key="{e74da1e4-190c-487d-9361-fa5a8594484c}" scalemindenom="10000" label="10000 - 20000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{cc57a8c1-ff41-48a9-94cf-f46d2b929465}" symbol="92" label="minor"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{7b999328-7e61-4d79-9d02-b76dedeb54b8}" symbol="93" label="minor bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{8999b479-09a7-4ff8-93bd-ac9d492b4d0a}" symbol="94" label="minor tunnel"/>
-        </rule>
-        <rule scalemaxdenom="50000" key="{7fa074a5-0857-49af-a212-ddb770397f6b}" scalemindenom="20000" label="20000 - 50000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{807c30d6-d94c-43bc-aeea-3e2e2b87e9e8}" symbol="95" label="minor"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{087d96de-e14e-45ba-bedb-b5abc5c62226}" symbol="96" label="minor bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{2ff256f2-2089-4bb8-9902-2a2251eeeed0}" symbol="97" label="minor tunnel"/>
-        </rule>
-        <rule scalemaxdenom="250000" key="{b9146261-f6d7-4490-b881-7a7645e4d8f3}" symbol="98" scalemindenom="50000" label="50000 - 250000"/>
+        <rule scalemaxdenom="20000" key="{4009487c-7017-4ada-850a-6f5d2b2c6d05}" symbol="105" scalemindenom="10000" label="service"/>
+        <rule scalemaxdenom="50000" key="{d97906b0-faf3-400b-97e1-dba7aba09c57}" symbol="106" scalemindenom="20000" label="service"/>
       </rule>
-      <rule filter="&quot;type&quot; = 'pedestrian'" key="{31d31486-e50e-4395-ba1b-3964c49959eb}" label="Pedestrian">
-        <rule scalemaxdenom="5000" key="{1a8c23e7-08a9-45ce-adaf-d8daea11d170}" scalemindenom="1" label="1 - 5000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{79da8971-bb20-486e-95b5-3495d9a1dcd3}" symbol="99" label="1 - 10000"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{15cd6edc-489f-41d0-a99e-85e3bcd2d690}" symbol="100" label="pedestrian bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{0b9cde3d-f146-4e86-b96d-ccba19893bf0}" symbol="101" label="pedestrian tunnel"/>
+      <rule filter="&quot;type&quot; = 'track'" key="{ab786ddb-65de-40aa-9a6f-aba031fe9294}" label="Track">
+        <rule scalemaxdenom="5000" key="{c8eadf61-466f-4680-b5e9-f6fb91abbdbb}" scalemindenom="1" label="1 - 5000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{d0ed7222-cddb-4f81-9bb8-956304014c58}" symbol="107" label="track"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{4d84cb50-1c05-47f6-a0bc-26b992357c07}" symbol="108" label="track bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{0f08e701-669e-4115-98c2-3423705650f7}" symbol="109" label="track tunnel"/>
         </rule>
-        <rule scalemaxdenom="10000" key="{e0d24898-5e93-4cfb-8d44-7908a0c5e480}" scalemindenom="5000" label="5000 - 10000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{73a7c0c0-6806-4637-b626-058ed1915c7d}" symbol="102" label="1 - 10000"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{8c6106e9-d6c5-4ce1-91f0-b4c4a2653c23}" symbol="103" label="pedestrian bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{39961d85-6af7-4ec4-b422-27a06578676d}" symbol="104" label="pedestrian tunnel"/>
+        <rule scalemaxdenom="10000" key="{51953c9a-6d28-4521-b2c8-0fc684bfdaa8}" scalemindenom="5000" label="5000 - 10000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{ac9e8730-2ac5-4f91-b469-3103bf56b4f7}" symbol="110" label="track"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{e1d7aecb-d06e-46c0-a68a-cbdd182d78e0}" symbol="111" label="track bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{971b7099-7aec-4817-ae48-58c637bae115}" symbol="112" label="track tunnel"/>
         </rule>
-        <rule scalemaxdenom="20000" key="{9911ad45-bc4e-4959-9756-090227843384}" symbol="105" scalemindenom="10000" label="10000 - 20000"/>
-        <rule scalemaxdenom="50000" key="{0bdc1942-a7f0-4a62-9ad6-72e5faaf2d53}" symbol="106" scalemindenom="20000" label="20000 - 50000"/>
+        <rule scalemaxdenom="20000" key="{f9841623-7523-41df-9d56-b16131f407bf}" symbol="113" scalemindenom="10000" label="10000 - 20000"/>
+        <rule scalemaxdenom="50000" key="{136585e8-1d71-48d4-b6cb-4273ccd2c7f9}" symbol="114" scalemindenom="20000" label="20000 - 50000"/>
+      </rule>
+      <rule filter="&quot;type&quot; = 'path'" key="{8e7384fd-a470-44ba-a3af-50f8ffd0cd22}" label="Path">
+        <rule scalemaxdenom="5000" key="{46aec967-08d2-4ea9-b2e9-1b8b9da4eda4}" scalemindenom="1" label="1 - 5000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{25d97182-983b-4073-9577-ccf447b1878e}" symbol="115" label="path"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{0dbec7aa-e29c-4e15-909e-33a23519b21d}" symbol="116" label="path bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{88f1276f-9eef-4887-bb78-b2601adaa5ab}" symbol="117" label="path tunnel"/>
+        </rule>
+        <rule scalemaxdenom="10000" key="{c22f0b44-7d68-4238-bc05-d215d5b9dfab}" scalemindenom="5000" label="5000 - 10000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{5fafbeb1-776f-49bc-98b4-8eaf64ec5d07}" symbol="118" label="path"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{7cf12042-7770-44aa-af0a-5c54ad0e3fe7}" symbol="119" label="path bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{f0eedc08-9358-4931-99b8-87ecb99640bd}" symbol="120" label="path tunnel"/>
+        </rule>
+        <rule scalemaxdenom="20000" key="{719834f6-8a66-4dcd-ab7e-f4664abc52fc}" symbol="121" scalemindenom="10000" label="10000 - 20000"/>
+        <rule scalemaxdenom="50000" key="{e47f6450-7405-4ee1-9760-177572d8bc06}" symbol="122" scalemindenom="20000" label="20000 - 50000"/>
+      </rule>
+      <rule filter="&quot;type&quot; = 'pedestrian'" key="{93205b50-2c80-4504-946d-c643fa7ecf59}" label="Pedestrian">
+        <rule scalemaxdenom="5000" key="{eda2c264-3601-432b-8596-e5e91528e638}" scalemindenom="1" label="1 - 5000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{56731d9a-8ea8-4bb2-9211-0d430a59e17c}" symbol="123" label="1 - 10000"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{45a3dceb-45b8-4b86-af33-63699e1d0eac}" symbol="124" label="pedestrian bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{2660f2f8-fa26-46f5-af29-514c3a99e4ea}" symbol="125" label="pedestrian tunnel"/>
+        </rule>
+        <rule scalemaxdenom="10000" key="{e2da55f6-c9e5-4006-9892-1db7dd643cbf}" scalemindenom="5000" label="5000 - 10000">
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{1f369c6d-5fe4-4183-a567-374f331b3a52}" symbol="126" label="1 - 10000"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{ddc2c17f-9b3d-403f-b2f2-010e35b6cd85}" symbol="127" label="pedestrian bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{1d922628-e3e3-4dbb-b501-d5b1fa856abb}" symbol="128" label="pedestrian tunnel"/>
+        </rule>
+        <rule scalemaxdenom="20000" key="{f2fc1dec-3fb4-4802-bde3-9b9d81c0f7e7}" symbol="129" scalemindenom="10000" label="10000 - 20000"/>
+        <rule scalemaxdenom="50000" key="{ea90cb5a-d23e-4723-ba04-378c5916dee6}" symbol="130" scalemindenom="20000" label="20000 - 50000"/>
       </rule>
       <rule filter="&quot;type&quot; = 'footway'" key="{6738e7d8-68ec-47a2-8c9c-b498903449a4}" label="Footway">
         <rule scalemaxdenom="5000" key="{79c21712-8713-4658-99b9-7233f66dc913}" scalemindenom="1" label="1 - 5000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{fa4b68ac-c206-46c9-9e56-df31b42159d4}" symbol="107" label="1 - 10000"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{b7fa2a12-7622-4f24-ac64-449b2eec6eb3}" symbol="108" label="footway bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{fd520350-5fdf-4807-bfea-8feb905ee36f}" symbol="109" label="footway tunnel"/>
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{fa4b68ac-c206-46c9-9e56-df31b42159d4}" symbol="131" label="1 - 10000"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{b7fa2a12-7622-4f24-ac64-449b2eec6eb3}" symbol="132" label="footway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{fd520350-5fdf-4807-bfea-8feb905ee36f}" symbol="133" label="footway tunnel"/>
         </rule>
         <rule scalemaxdenom="10000" key="{ae55ea12-5a22-43a5-be1b-66448fca9cba}" scalemindenom="5000" label="5000 - 10000">
-          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{f4aded63-3ab6-485d-911b-2d36d40059a1}" symbol="110" label="1 - 10000"/>
-          <rule filter="&quot;bridge&quot; = '1'" key="{76acb2fb-f7af-4321-af43-c483ea40709f}" symbol="111" label="footway bridge"/>
-          <rule filter="&quot;tunnel&quot; = '1'" key="{317f8764-916c-4068-bfa3-59489a3a6a74}" symbol="112" label="footway tunnel"/>
+          <rule filter=" &quot;bridge&quot;  = '0' AND  &quot;tunnel&quot;  = '0'" key="{f4aded63-3ab6-485d-911b-2d36d40059a1}" symbol="134" label="1 - 10000"/>
+          <rule filter="&quot;bridge&quot; = '1'" key="{76acb2fb-f7af-4321-af43-c483ea40709f}" symbol="135" label="footway bridge"/>
+          <rule filter="&quot;tunnel&quot; = '1'" key="{317f8764-916c-4068-bfa3-59489a3a6a74}" symbol="136" label="footway tunnel"/>
         </rule>
-        <rule scalemaxdenom="20000" key="{601a605a-2a4a-4d9e-bc76-4602f21483e4}" symbol="113" scalemindenom="10000" label="10000 - 20000"/>
-        <rule scalemaxdenom="50000" key="{5f0a26da-e093-41f5-ae17-d7b7957c46be}" symbol="114" scalemindenom="20000" label="20000 - 50000"/>
+        <rule scalemaxdenom="20000" key="{601a605a-2a4a-4d9e-bc76-4602f21483e4}" symbol="137" scalemindenom="10000" label="10000 - 20000"/>
+        <rule scalemaxdenom="50000" key="{5f0a26da-e093-41f5-ae17-d7b7957c46be}" symbol="138" scalemindenom="20000" label="20000 - 50000"/>
       </rule>
       <rule filter="&quot;type&quot; = 'steps'" key="{068d9f67-6557-4d11-96fc-de34b6148f0e}" label="Steps">
-        <rule scalemaxdenom="5000" key="{f52e9f5f-ec44-4cd2-ac0d-0ecf95c19f48}" symbol="115" scalemindenom="1" label="1 - 5000"/>
-        <rule scalemaxdenom="10000" key="{ccd9a3f8-bb13-4723-9930-23f19f10dd25}" symbol="116" scalemindenom="5000" label="5000 - 10000"/>
-        <rule scalemaxdenom="20000" key="{9f5d566d-fb89-4d8a-9887-49f25f31d733}" symbol="117" scalemindenom="10000" label="10000 - 20000"/>
-        <rule scalemaxdenom="50000" key="{4fb873fe-14b5-4805-a673-7e3992ac51eb}" symbol="118" scalemindenom="20000" label="20000 - 50000"/>
+        <rule scalemaxdenom="5000" key="{f52e9f5f-ec44-4cd2-ac0d-0ecf95c19f48}" symbol="139" scalemindenom="1" label="1 - 5000"/>
+        <rule scalemaxdenom="10000" key="{ccd9a3f8-bb13-4723-9930-23f19f10dd25}" symbol="140" scalemindenom="5000" label="5000 - 10000"/>
+        <rule scalemaxdenom="20000" key="{9f5d566d-fb89-4d8a-9887-49f25f31d733}" symbol="141" scalemindenom="10000" label="10000 - 20000"/>
+        <rule scalemaxdenom="50000" key="{4fb873fe-14b5-4805-a673-7e3992ac51eb}" symbol="142" scalemindenom="20000" label="20000 - 50000"/>
       </rule>
     </rules>
     <symbols>
@@ -400,9 +442,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="2.5"/>
+          <prop k="line_width" v="2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -412,14 +454,14 @@
         </layer>
         <layer pass="11" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.8"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -431,36 +473,19 @@
       <symbol alpha="1" type="line" name="101">
         <layer pass="0" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="203,203,203,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="2.5"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
-          <prop k="width_map_unit_scale" v="0,0"/>
-        </layer>
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
-          <prop k="customdash_map_unit_scale" v="0,0"/>
-          <prop k="customdash_unit" v="MM"/>
-          <prop k="draw_inside_polygon" v="0"/>
-          <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.8"/>
-          <prop k="line_width_unit" v="MM"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
         <layer pass="0" class="SimpleLine" locked="0">
@@ -470,9 +495,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,255"/>
-          <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.8"/>
+          <prop k="line_color" v="230,230,230,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -482,16 +507,33 @@
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="102">
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="round"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="138,138,138,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
+          <prop k="line_width" v="0.9"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="2" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="square"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -508,9 +550,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -520,14 +562,14 @@
         </layer>
         <layer pass="11" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
+          <prop k="line_width" v="0.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -539,36 +581,19 @@
       <symbol alpha="1" type="line" name="104">
         <layer pass="0" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
+          <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="203,203,203,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
-          <prop k="width_map_unit_scale" v="0,0"/>
-        </layer>
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
-          <prop k="customdash_map_unit_scale" v="0,0"/>
-          <prop k="customdash_unit" v="MM"/>
-          <prop k="draw_inside_polygon" v="0"/>
-          <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
-          <prop k="line_width_unit" v="MM"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
         <layer pass="0" class="SimpleLine" locked="0">
@@ -578,9 +603,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="255,255,255,255"/>
-          <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.5"/>
+          <prop k="line_color" v="230,230,230,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.6"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -590,16 +615,33 @@
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="105">
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="round"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="138,138,138,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.7"/>
+          <prop k="line_width" v="0.6"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="2" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="square"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.4"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -609,16 +651,16 @@
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="106">
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="round"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="233,233,233,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.4"/>
+          <prop k="line_width" v="0.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -635,9 +677,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1"/>
+          <prop k="line_width" v="1.8"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -654,9 +696,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -671,9 +713,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1"/>
+          <prop k="line_width" v="1.8"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -690,9 +732,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_color" v="175,175,175,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="2.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -707,9 +749,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1"/>
+          <prop k="line_width" v="1.8"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -726,7 +768,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.4"/>
+          <prop k="line_width" v="1.8"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -779,9 +821,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.7"/>
+          <prop k="line_width" v="1.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -798,9 +840,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
+          <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -815,9 +857,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.7"/>
+          <prop k="line_width" v="1.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -834,9 +876,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_color" v="175,175,175,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
+          <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -851,9 +893,9 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.7"/>
+          <prop k="line_width" v="1.1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -870,7 +912,7 @@
           <prop k="joinstyle" v="round"/>
           <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="dot"/>
-          <prop k="line_width" v="1.1"/>
+          <prop k="line_width" v="1.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -887,7 +929,7 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="0.4"/>
           <prop k="line_width_unit" v="MM"/>
@@ -906,7 +948,7 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="0.2"/>
           <prop k="line_width_unit" v="MM"/>
@@ -920,84 +962,33 @@
       <symbol alpha="1" type="line" name="115">
         <layer pass="0" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="5;2"/>
-          <prop k="customdash_map_unit_scale" v="0,0"/>
-          <prop k="customdash_unit" v="MM"/>
-          <prop k="draw_inside_polygon" v="0"/>
-          <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="138,138,138,255"/>
-          <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.1"/>
-          <prop k="line_width_unit" v="MM"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="use_custom_dash" v="0"/>
-          <prop k="width_map_unit_scale" v="0,0"/>
-        </layer>
-        <layer pass="1" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1"/>
+          <prop k="line_width" v="0.9"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
           <prop k="use_custom_dash" v="0"/>
           <prop k="width_map_unit_scale" v="0,0"/>
-        </layer>
-        <layer pass="2" class="MarkerLine" locked="0">
-          <prop k="interval" v="1"/>
-          <prop k="interval_map_unit_scale" v="0,0"/>
-          <prop k="interval_unit" v="MM"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="placement" v="interval"/>
-          <prop k="rotate" v="1"/>
-          <symbol alpha="1" type="marker" name="@115@2">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,255,255,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="line"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="138,138,138,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="116">
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="square"/>
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
-          <prop k="joinstyle" v="bevel"/>
-          <prop k="line_color" v="192,192,192,255"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="0,0,0,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.8"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1005,74 +996,74 @@
           <prop k="use_custom_dash" v="0"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
-        <layer pass="1" class="SimpleLine" locked="0">
+        <layer pass="11" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
           <prop k="customdash" v="1;1"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.7"/>
+          <prop k="line_width" v="0.9"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
           <prop k="use_custom_dash" v="0"/>
           <prop k="width_map_unit_scale" v="0,0"/>
-        </layer>
-        <layer pass="2" class="MarkerLine" locked="0">
-          <prop k="interval" v="0.9"/>
-          <prop k="interval_map_unit_scale" v="0,0"/>
-          <prop k="interval_unit" v="MM"/>
-          <prop k="offset" v="0"/>
-          <prop k="offset_along_line" v="0"/>
-          <prop k="offset_along_line_map_unit_scale" v="0,0"/>
-          <prop k="offset_along_line_unit" v="MM"/>
-          <prop k="offset_map_unit_scale" v="0,0"/>
-          <prop k="offset_unit" v="MM"/>
-          <prop k="placement" v="interval"/>
-          <prop k="rotate" v="1"/>
-          <symbol alpha="1" type="marker" name="@116@2">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,255,255,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="line"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="192,192,192,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="0.7"/>
-              <prop k="size_map_unit_scale" v="0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="117">
         <layer pass="0" class="SimpleLine" locked="0">
           <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="175,175,175,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.4"/>
+          <prop k="line_width" v="1.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
           <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="217,184,164,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.9"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="0.9"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
@@ -1084,9 +1075,45 @@
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="217,184,164,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="0.2"/>
+          <prop k="line_width" v="0.5"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="119">
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="0,0,0,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="11" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="217,184,164,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.5"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -1148,6 +1175,332 @@
           <prop k="width_map_unit_scale" v="0,0"/>
         </layer>
       </symbol>
+      <symbol alpha="1" type="line" name="120">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="175,175,175,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="217,184,164,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.6"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="0.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="121">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="217,184,164,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.2"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="122">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="217,184,164,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="123">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="124">
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="2.5"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="11" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="125">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="2.2"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="126">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="127">
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.5"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="11" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="128">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.5"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.5"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="129">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
       <symbol alpha="1" type="line" name="13">
         <layer pass="5" class="SimpleLine" locked="0">
           <prop k="capstyle" v="round"/>
@@ -1182,6 +1535,349 @@
           <prop k="offset_unit" v="MM"/>
           <prop k="use_custom_dash" v="0"/>
           <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="130">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="131">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="132">
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="11" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="133">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="134">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="135">
+        <layer pass="10" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="152,152,152,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="11" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="136">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="203,203,203,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="dot"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="1"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="137">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="138">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.2"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="139">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="138,138,138,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="2" class="MarkerLine" locked="0">
+          <prop k="interval" v="1"/>
+          <prop k="interval_map_unit_scale" v="0,0"/>
+          <prop k="interval_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_along_line" v="0"/>
+          <prop k="offset_along_line_map_unit_scale" v="0,0"/>
+          <prop k="offset_along_line_unit" v="MM"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="placement" v="interval"/>
+          <prop k="rotate" v="1"/>
+          <symbol alpha="1" type="marker" name="@139@2">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,255,255,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="line"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="138,138,138,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="14">
@@ -1229,6 +1925,114 @@
           <prop k="line_color" v="255,255,255,255"/>
           <prop k="line_style" v="solid"/>
           <prop k="line_width" v="1.1"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="140">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="square"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="line_color" v="192,192,192,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.8"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.7"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="2" class="MarkerLine" locked="0">
+          <prop k="interval" v="0.9"/>
+          <prop k="interval_map_unit_scale" v="0,0"/>
+          <prop k="interval_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_along_line" v="0"/>
+          <prop k="offset_along_line_map_unit_scale" v="0,0"/>
+          <prop k="offset_along_line_unit" v="MM"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="placement" v="interval"/>
+          <prop k="rotate" v="1"/>
+          <symbol alpha="1" type="marker" name="@140@2">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,255,255,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="line"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="192,192,192,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="0.7"/>
+              <prop k="size_map_unit_scale" v="0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="141">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+      </symbol>
+      <symbol alpha="1" type="line" name="142">
+        <layer pass="0" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="flat"/>
+          <prop k="customdash" v="1;1"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="round"/>
+          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="0.2"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -4397,16 +5201,33 @@
         </layer>
       </symbol>
       <symbol alpha="1" type="line" name="99">
-        <layer pass="0" class="SimpleLine" locked="0">
-          <prop k="capstyle" v="flat"/>
-          <prop k="customdash" v="1;1"/>
+        <layer pass="1" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="round"/>
+          <prop k="customdash" v="5;2"/>
           <prop k="customdash_map_unit_scale" v="0,0"/>
           <prop k="customdash_unit" v="MM"/>
           <prop k="draw_inside_polygon" v="0"/>
           <prop k="joinstyle" v="round"/>
-          <prop k="line_color" v="233,233,233,255"/>
+          <prop k="line_color" v="138,138,138,255"/>
           <prop k="line_style" v="solid"/>
-          <prop k="line_width" v="1.8"/>
+          <prop k="line_width" v="1.4"/>
+          <prop k="line_width_unit" v="MM"/>
+          <prop k="offset" v="0"/>
+          <prop k="offset_map_unit_scale" v="0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="use_custom_dash" v="0"/>
+          <prop k="width_map_unit_scale" v="0,0"/>
+        </layer>
+        <layer pass="2" class="SimpleLine" locked="0">
+          <prop k="capstyle" v="square"/>
+          <prop k="customdash" v="5;2"/>
+          <prop k="customdash_map_unit_scale" v="0,0"/>
+          <prop k="customdash_unit" v="MM"/>
+          <prop k="draw_inside_polygon" v="0"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="line_color" v="255,255,255,255"/>
+          <prop k="line_style" v="solid"/>
+          <prop k="line_width" v="1"/>
           <prop k="line_width_unit" v="MM"/>
           <prop k="offset" v="0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
@@ -4430,7 +5251,7 @@
     <property key="labeling/bufferDraw" value="true"/>
     <property key="labeling/bufferJoinStyle" value="128"/>
     <property key="labeling/bufferNoFill" value="false"/>
-    <property key="labeling/bufferSize" value="0.8"/>
+    <property key="labeling/bufferSize" value="0.7"/>
     <property key="labeling/bufferSizeInMapUnits" value="false"/>
     <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
     <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
@@ -4438,13 +5259,14 @@
     <property key="labeling/centroidInside" value="false"/>
     <property key="labeling/centroidWhole" value="false"/>
     <property key="labeling/dataDefined/AlwaysShow" value="0~~1~~&quot;type&quot; =  'motorway' OR  &quot;type&quot; =  'trunk'~~"/>
-    <property key="labeling/dataDefined/Bold" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot;  =  'motorway'  &#xd;&#xa;&#x9;THEN   1&#xd;&#xa;    WHEN &quot;type&quot;  =  'trunk'  &#xd;&#xa;&#x9;THEN   1&#xd;&#xa;&#x9;WHEN &quot;type&quot;  =  'primary'  &#xd;&#xa;&#x9;THEN   1&#xd;&#xa;&#x9;ELSE 0&#xd;&#xa;END~~"/>
+    <property key="labeling/dataDefined/Bold" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot;  IN  ('motorway','trunk','primary','secondary')&#xd;&#xa;&#x9;THEN   1&#xd;&#xa;&#x9;ELSE 0&#xd;&#xa;END~~"/>
     <property key="labeling/dataDefined/BufferColor" value="0~~1~~CASE &#xd;&#xa;&#x9;WHEN  &quot;type&quot; = 'primary'  THEN  color_rgba( 0,0,0,255)&#xd;&#xa;&#x9;ELSE  color_rgb( 255,255,255)&#xd;&#xa;END~~"/>
     <property key="labeling/dataDefined/BufferDraw" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot; NOT IN ('motorway','trunk') THEN 1&#xd;&#xa;    ELSE 0&#xd;&#xa;END~~"/>
-    <property key="labeling/dataDefined/Color" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot;  =  'motorway'  &#xd;&#xa;&#x9;THEN   color_rgb( 255,230,0)&#xd;&#xa;    WHEN &quot;type&quot;  =  'trunk'  &#xd;&#xa;&#x9;THEN   color_rgb( 255,255,255)&#xd;&#xa;END~~"/>
+    <property key="labeling/dataDefined/Color" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot;  =  'motorway'  &#xd;&#xa;&#x9;THEN   color_rgb( 255,230,0)&#xd;&#xa;    WHEN &quot;type&quot;  =  'trunk'  &#xd;&#xa;&#x9;THEN   color_rgb( 255,255,255)&#xd;&#xa;&#x9;WHEN &quot;type&quot;  IN  ('track','path' )   &#xd;&#xa;&#x9;THEN   color_rgb( 191,126,86)&#xd;&#xa;END~~"/>
     <property key="labeling/dataDefined/ShapeDraw" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot; IN ('motorway','trunk') AND &quot;ref&quot; IS NOT NULL THEN 1&#xd;&#xa;    ELSE 0&#xd;&#xa;END~~"/>
     <property key="labeling/dataDefined/ShapeFillColor" value="1~~1~~CASE&#xd;&#xa;    WHEN &quot;type&quot;  IN   ( 'motorway','trunk'   ) &#xd;&#xa;&#x9;THEN   color_rgb( 207,23,48)&#xd;&#xa;&#x9;ELSE color_rgba( 255,255,255,140)&#xd;&#xa;END~~"/>
     <property key="labeling/dataDefined/Show" value="0~~1~~&quot;type&quot; =  'motorway' OR  &quot;type&quot; =  'trunk'~~"/>
+    <property key="labeling/dataDefined/Size" value="1~~1~~tostring( &#xd;&#xa;CASE &#xd;&#xa;&#x9;WHEN &quot;type&quot;  IN ('track','path')&#xd;&#xa;&#x9;THEN '6'&#xd;&#xa;&#x9;WHEN &quot;type&quot;  IN ('secondary','tertiary','residential','unclassified','road',&#xd;&#xa;&#x9;'pedestrian','footway','service')&#xd;&#xa;&#x9;THEN '7'&#xd;&#xa;END &#xd;&#xa;)~~"/>
     <property key="labeling/decimals" value="3"/>
     <property key="labeling/displayAll" value="false"/>
     <property key="labeling/dist" value="0"/>
@@ -4452,12 +5274,12 @@
     <property key="labeling/distMapUnitMaxScale" value="0"/>
     <property key="labeling/distMapUnitMinScale" value="0"/>
     <property key="labeling/enabled" value="true"/>
-    <property key="labeling/fieldName" value="CASE&#xd;&#xa;    WHEN &quot;type&quot; IN  ( 'motorway','trunk' ) &#xd;&#xa;&#x9;&#x9;AND &quot;ref&quot; IS NOT NULL THEN  &quot;ref&quot;&#xd;&#xa;&#x9;WHEN &quot;type&quot; IN ('primary','secondary' , 'tertiary')&#xd;&#xa;&#x9;&#x9;AND &quot;ref&quot; IS NOT NULL THEN &quot;ref&quot;  || ' - ' ||  &quot;name&quot; &#xd;&#xa;&#x9;WHEN &quot;type&quot; IN ('primary','secondary' , 'tertiary', 'residential',&#xd;&#xa;&#x9;'unclassified','road','pedestrian','footway')&#xd;&#xa;&#x9;AND &quot;ref&quot; IS NULL THEN &quot;name&quot;&#xd;&#xa;END"/>
+    <property key="labeling/fieldName" value="CASE&#xd;&#xa;    WHEN &quot;type&quot; IN  ( 'motorway','trunk' ) &#xd;&#xa;&#x9;&#x9;AND &quot;ref&quot; IS NOT NULL THEN  &quot;ref&quot;&#xd;&#xa;&#x9;WHEN &quot;type&quot; IN ('primary','secondary' , 'tertiary')&#xd;&#xa;&#x9;&#x9;AND &quot;ref&quot; IS NOT NULL THEN &quot;ref&quot;  || ' - ' ||  &quot;name&quot; &#xd;&#xa;&#x9;WHEN &quot;type&quot; IN ('primary','secondary' , 'tertiary', 'residential',&#xd;&#xa;&#x9;'unclassified','road','pedestrian','footway','track','path')&#xd;&#xa;&#x9;AND &quot;ref&quot; IS NULL THEN &quot;name&quot;&#xd;&#xa;END"/>
     <property key="labeling/fontBold" value="false"/>
     <property key="labeling/fontCapitals" value="0"/>
     <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
     <property key="labeling/fontItalic" value="false"/>
-    <property key="labeling/fontLetterSpacing" value="0"/>
+    <property key="labeling/fontLetterSpacing" value="0.1875"/>
     <property key="labeling/fontLimitPixelSize" value="false"/>
     <property key="labeling/fontMaxPixelSize" value="10000"/>
     <property key="labeling/fontMinPixelSize" value="3"/>
@@ -4468,7 +5290,7 @@
     <property key="labeling/fontStrikeout" value="false"/>
     <property key="labeling/fontUnderline" value="false"/>
     <property key="labeling/fontWeight" value="50"/>
-    <property key="labeling/fontWordSpacing" value="0"/>
+    <property key="labeling/fontWordSpacing" value="1"/>
     <property key="labeling/formatNumbers" value="false"/>
     <property key="labeling/isExpression" value="true"/>
     <property key="labeling/labelOffsetInMapUnits" value="true"/>
